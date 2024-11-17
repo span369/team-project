@@ -1,5 +1,5 @@
 //! utils/reset + utils
-
+@import './base/reset';
 
 //! base
 
@@ -8,5 +8,11 @@
 
 
 //! layouts
-
+@import './layouts/01_header';
+@import './layouts/02_herol';
+@import './layouts/03_skills';
+@import './layouts/04_about';
+@import './layouts/05_pricing';
+@import './layouts/06_contacts';
+@import './layouts/07_footer';
 

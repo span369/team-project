@@ -1,11 +1,11 @@
 {
-	"name": "britlex",
+	"name": "team-project",
 	"private": true,
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite --host",
-		"build": "vite build --base=/britlex/",
+		"build": "vite build --base=/team-project/",
 		"preview": "vite preview"
 	},
 	"devDependencies": {

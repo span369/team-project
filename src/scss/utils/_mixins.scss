@@ -1,0 +1,37 @@
+//! -------------------- outline --------------------
+//todo var.1 
+// @mixin outline($size: 1px, $type: solid, $color) {
+//     outline: $size $type $color;
+// }
+
+//todo var.2 
+@mixin outline($size: 1px, $type: solid, $color: tomato) {
+    outline: $size $type $color;
+}
+
+
+//! ----------- SASS-flex-властивості (flex-контейнери-міксіни) -----------
+@mixin flex_JCcen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin flex_AIcen {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+//! ----------- SASS: Загальні стилі Заголовків -----------
+@mixin title() {
+
+}
+
+
+//! ----------- SASS: Загальні стилі Kнопок -----------
+@mixin button() {
+
+}
+

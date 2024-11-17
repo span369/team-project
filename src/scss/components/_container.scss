@@ -1,0 +1,32 @@
+.container {
+	// Загальні стилі
+	// ! міксін outline
+	@include outline();
+
+	@media (min-width: 320px) {
+		// ! міксін outline
+		@include outline($color: teal);
+	}
+
+	@media (min-width: 320px) {
+		// ! міксін outline
+		@include outline($color: violet);
+	}
+
+	@media (min-width: 320px) {
+		// ! міксін outline
+		@include outline($color: green);
+	}
+
+	@media (min-width: 320px) {
+
+		// ! міксін outline
+		@include outline($color: orange);
+	}
+
+	@media (min-width: 320px) {
+
+		// ! міксін outline
+		@include outline($color: blue);
+	}
+}

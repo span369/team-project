@@ -1,0 +1,15 @@
+//? ==============  map ==============
+// * ================= break-points ===================
+$break-points: (
+    sm: 0px,
+    md: 0px,
+    lg: 0px,
+    xl: 0px,
+    xxl: 0px,
+);
+
+//? ======== function ========
+// * ================= break-points ===================
+@function getBreakPoint($break-point) {
+    @return map-get($break-points, $break-point);
+}

@@ -22,13 +22,3 @@ $colors: (
     @return map-get($colors, $color);
 }
 //? _______________________________________________
-
-
-
-//? == Cписок, або масив значень (icons) ==
-$icons: "premium-quality", "indelible-paint", "fast-shipping";
-//? ______________________________________________
-
-//? == Cписок, або масив значень (images) ==
-$images-benefits: "shoelace", "lining", "logo", "mesh", "sole";
-//? ______________________________________________

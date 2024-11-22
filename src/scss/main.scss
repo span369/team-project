@@ -1,11 +1,17 @@
 //! utils/reset + utils
 @import './base/reset';
+@import './utils/variables';
+@import './utils/breakpoints';
+@import './utils/mixins';
+
 
 //! base
-
+@import './base/common';
 
 //! components
-
+@import './components/container';
+@import './components/main-logo';
+@import './components/modal-burger-menu';
 
 //! layouts
 @import './layouts/01_header';

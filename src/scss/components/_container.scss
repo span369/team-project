@@ -1,32 +1,33 @@
 .container {
 	// Загальні стилі
-	// ! міксін outline
+	width: 100%;
+	min-width: 320px;
+	margin: 0 auto;
+    padding: 0 10px;
 	@include outline();
 
-	@media (min-width: 320px) {
-		// ! міксін outline
+	@media (min-width: getBreakPoint('sm')) {
+		max-width: getBreakPoint('sm');
 		@include outline($color: teal);
 	}
 
-	@media (min-width: 320px) {
-		// ! міксін outline
+	@media (min-width: getBreakPoint('md')) {
+		max-width: getBreakPoint('md');
 		@include outline($color: violet);
 	}
 
-	@media (min-width: 320px) {
-		// ! міксін outline
+	@media (min-width: getBreakPoint('lg')) {
+		max-width: getBreakPoint('lg');
 		@include outline($color: green);
 	}
 
-	@media (min-width: 320px) {
-
-		// ! міксін outline
+	@media (min-width: getBreakPoint('xl')) {
+		max-width: getBreakPoint('xl');
 		@include outline($color: orange);
 	}
 
-	@media (min-width: 320px) {
-
-		// ! міксін outline
+	@media (min-width: getBreakPoint('xxl')) {
+		max-width: getBreakPoint('xxl');	
 		@include outline($color: blue);
 	}
 }

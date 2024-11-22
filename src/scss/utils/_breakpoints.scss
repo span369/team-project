@@ -1,11 +1,11 @@
 //? ==============  map ==============
 // * ================= break-points ===================
 $break-points: (
-    sm: 0px,
-    md: 0px,
-    lg: 0px,
-    xl: 0px,
-    xxl: 0px,
+    sm: 320px,
+    md: 575px,
+    lg: 767px,
+    xl: 992px,
+    xxl: 1600px,
 );
 
 //? ======== function ========

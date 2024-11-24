@@ -24,7 +24,7 @@
 		<header class="header">
 	<div class="container">
 		<div class="logo-container">
-	<a>Brit<span>lex</span></a>
+	<a href="./index.html" class="logo">Brit<span class="logo__span">lex</span></a>
 </div>
 
 		<svg><use></use></svg>
@@ -35,7 +35,7 @@
 			<section class="hero">
 	<div class="container">
 		<img class="hero__img" src="" alt="" />
-		<h2 class="hero-title">Learn Any Foreign Language</h2>
+		<h1 class="hero__title">Learn Any Foreign Language</h1>
 		<p class="hero__text">
 			With our teachers who write a program for each student, you will be able
 			to make your first sketch after the first lesson.
@@ -44,9 +44,9 @@
 	</div>
 </section>
 
-			<section class="skills">
+			<section class="skills" id="skills">
 	<div class="container">
-		<h2 class="skills-title">skills</h2>
+		<h2 class="title">skills</h2>
 		<ul class="skills-list">
 			<li class="skills-list__item">
 				<img class="skills-list__img" />
@@ -171,30 +171,38 @@
 		<h2 class="contacts-title">contacts</h2>
 		<img src="" alt="" class="contacts__img" />
 		<p class="contacts__text"></p>
-		<input
-			class="contacts__input"
-			required=""
-			type="email"
-			name="email"
-			placeholder="Enter Your E-mail"
-		/>
-		<button class="contacts__btn">Subscribe</button>
+		<form class="contacts-form">
+			<input class="contacts-form__input" required="" type="email" name="email" placeholder="Enter Your E-mail" />
+			<button type="submit" class="contacts-form__btn">Subscribe</button>
+		</form>
 	</div>
 </section>
-
 		</main>
 		<footer class="footer">
 	<div class="container">
 		<div class="logo-container">
-	<a>Brit<span>lex</span></a>
+	<a href="./index.html" class="logo">Brit<span class="logo__span">lex</span></a>
 </div>
 
-		<p class="footer__text">
-			Terms and Conditions • Privacy Policy • Cookie Policy
-		</p>
+		<ul class="footer-list">
+			<li class="footer-list__item">
+				<a class="footer-list__link" href="">	
+					Terms and Conditions
+				</a>
+			</li>
+			<li class="footer-list__item">
+				<a  class="footer-list__link" href="">	
+					Privacy Policy
+				</a>
+			</li>
+			<li class="footer-list__item">
+				<a  class="footer-list__link" href="">	
+					Cookie Policy
+				</a>
+			</li>
+		</ul>
 	</div>
 </footer>
-
 
 		<!--todo backdrop + Модальнє вікно (modal-window) для Бургер-меню -->
 		<div class="backdrop is-hidden" data-backdrop></div>

@@ -8,6 +8,20 @@
         display: block;
     }
    }
-
+   &__btn{
+    display: none;
+    @media (min-width: getBreakPoint('xl')) {
+        display: block;
+    }
+   }
+   &__svg{
+   align-items: left;
+   justify-content: left;
+   }
+   .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
 }
 

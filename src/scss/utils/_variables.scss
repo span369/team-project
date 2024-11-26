@@ -1,9 +1,10 @@
 //? ==============  map ==============
 // * ================= fonts ===================
-// $fonts: (
-//     main-family: ,
+$fonts: (
+    font-family: "Poppins",
+);
 
-// );
+
 // * ================= colors ==================
 $colors: (
 	dark: #000000,
@@ -14,11 +15,11 @@ $colors: (
 
 //? ======== function ========
 // * ================= fonts ===================
-@function getFont($font) {
-    @return map-get($fonts, $font);
+@function getFont($key) {
+    @return map-get($fonts, $key);
 }
 // * ================= colors ==================
-@function getColor($color) {
-    @return map-get($colors, $color);
+@function getColor($key) {
+    @return map-get($colors, $key);
 }
 //? _______________________________________________

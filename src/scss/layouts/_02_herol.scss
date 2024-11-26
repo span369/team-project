@@ -1,7 +1,35 @@
 .hero {
-    background-color: #caffca;
-    
-    //! Медіа-запити
-    
-}
+	background-color: #caffca;
 
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__title {
+		font-family: getFont('font-family');
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 150%;
+		text-align: center;
+		color: #000;
+        margin-top:13px ;
+        margin-bottom:20px ;
+	}
+	&__text {
+		font-family: getFont('font-family');
+		font-weight: 400;
+		font-size: 14px;
+		text-align: center;
+		color: #8f95a5;
+        margin-bottom: 35px;
+	}
+    &__btn{
+        font-family: getFont('font-family');
+        padding: 19px 99px;
+        background: #263238;
+        font-weight: 500;
+        font-size: 16px;
+        color: #fff;
+    }
+}

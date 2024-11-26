@@ -1,5 +1,9 @@
-.logo-container {
-    width: 50px;
-    height: 50px;
-    background-color: #ff7777;
+.logo {
+    color: #000;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: getFont('font-family');
+    &__span {
+        color: #939393;
+    }
 }

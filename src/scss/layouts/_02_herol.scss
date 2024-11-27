@@ -1,5 +1,6 @@
 .hero {
 	background-color: #caffca;
+	padding-bottom: 30px;
 
 	.container {
 		display: flex;
@@ -31,5 +32,6 @@
         font-weight: 500;
         font-size: 16px;
         color: #fff;
+		border-radius: 5px;
     }
 }

@@ -40,13 +40,15 @@
 		// 	background-image: url(../images/03_1_skills_background-sm.svg);
 		// }
 		&__btn {
-			padding: 14px 43px;
-			background-color: #263238;
-			color: #fff;
-			font-weight: 500;
+			// padding: 14px 43px;
+			// background-color: #263238;
+			// color: #fff;
+			// font-weight: 500;
+			// font-size: 14px;
+			// border-radius: 4px;
+			// font-family: getFont('font-family');
+			@include button(200px, 60px);
 			font-size: 14px;
-			border-radius: 4px;
-			font-family: getFont('font-family');
 		}
 	}
 }

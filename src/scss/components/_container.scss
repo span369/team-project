@@ -8,26 +8,31 @@
 
 	@media (min-width: getBreakPoint('sm')) {
 		max-width: getBreakPoint('sm');
+		padding: 0 15px;
 		@include outline($color: teal);
 	}
 
 	@media (min-width: getBreakPoint('md')) {
 		max-width: getBreakPoint('md');
+		padding: 0 32px;
 		@include outline($color: violet);
 	}
 
 	@media (min-width: getBreakPoint('lg')) {
 		max-width: getBreakPoint('lg');
+		padding: 0 38px;
 		@include outline($color: green);
 	}
 
 	@media (min-width: getBreakPoint('xl')) {
 		max-width: getBreakPoint('xl');
+		padding: 0 32px;
 		@include outline($color: orange);
 	}
 
 	@media (min-width: getBreakPoint('xxl')) {
-		max-width: getBreakPoint('xxl');	
+		max-width: getBreakPoint('xxl');
+		padding: 0 132px;	
 		@include outline($color: blue);
 	}
 }

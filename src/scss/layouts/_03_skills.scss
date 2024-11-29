@@ -2,10 +2,8 @@
 	background-color: #ffdde3;
 	font-family: getFont('font-family');
 	.title {
-		text-align: center;
-		font-weight: 600;
-		font-size: 24px;
-		line-height: 333%;
+		@include title-section;
+		margin-bottom: 32px;
 	}
 	.skills-list {
 		display: flex;
@@ -13,7 +11,7 @@
 		flex-direction: column;
 		&__item {
 			background-color: #f5f5f5;
-            padding: 10px 17px 44px 15px;
+			padding: 10px 17px 44px 15px;
 		}
 		&__title {
 			font-weight: 600;
@@ -49,8 +47,8 @@
 			color: #fff;
 			font-weight: 500;
 			font-size: 14px;
-            border-radius: 4px;
-            font-family: getFont('font-family');
+			border-radius: 4px;
+			font-family: getFont('font-family');
 		}
 	}
 }

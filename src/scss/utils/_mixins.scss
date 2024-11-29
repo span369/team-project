@@ -1,37 +1,53 @@
 //! -------------------- outline --------------------
-//todo var.1 
+//todo var.1
 // @mixin outline($size: 1px, $type: solid, $color) {
 //     outline: $size $type $color;
 // }
 
-//todo var.2 
+//todo var.2
 @mixin outline($size: 1px, $type: solid, $color: tomato) {
-    outline: $size $type $color;
+	outline: $size $type $color;
 }
-
 
 //! ----------- SASS-flex-властивості (flex-контейнери-міксіни) -----------
 @mixin flex_JCcen {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 @mixin flex_AIcen {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
-
 
 //! ----------- SASS: Загальні стилі Заголовків -----------
-@mixin title() {
+@mixin title-section() {
+	// font-family: getFont('font-family');
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 3.33;
+	color: getColor('dark');
+    text-align: center;
+    @media (min-width: getBreakPoint('md')) {
+        font-size: 30px;
+        line-height: 2.67;
+	}
 
+	@media (min-width: getBreakPoint('xl')) {
+        font-size: 36px;
+        line-height: 2.22;
+	}
+
+	@media (min-width: getBreakPoint('xxl')) {
+        font-size: 48px;
+        line-height: 1.67;
+	}
 }
-
+@mixin title-card() {
+}
 
 //! ----------- SASS: Загальні стилі Kнопок -----------
 @mixin button() {
-
 }
-

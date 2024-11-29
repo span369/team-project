@@ -17,6 +17,14 @@
 		color: #000;
         margin-top:13px ;
         margin-bottom:20px ;
+		&::before{
+			content:'';
+			display: block;
+			background-repeat:no-repeat ;
+			background-position: center;
+			height:299px;
+			background-image: url(../images/02_1_hero_background-sm.svg);
+		}
 	}
 	&__text {
 		font-family: getFont('font-family');

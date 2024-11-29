@@ -20,21 +20,28 @@
 			font-size: 18px;
 			line-height: 444%;
 			color: #263238;
+
+			&::before {
+				content: '';
+				display: block;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
 		}
 		&__text {
 			font-weight: 400;
 			font-size: 13px;
 			color: #8f95a5;
 		}
-		&__title::before {
-			content: '';
-			display: block;
-			background-repeat: no-repeat;
-			background-position: center;
-		}
+		// &__title::before {
+		// 	content: '';
+		// 	display: block;
+		// 	background-repeat: no-repeat;
+		// 	background-position: center;
+		// }
 		&__title:nth-child(1)::before {
 			height: 213px;
-			background-image: url(/src/images/03_1_skills_background-sm.svg);
+			background-image: url(../images/03_1_skills_background-sm.svg);
 		}
 		&__btn {
 			padding: 14px 43px;

@@ -49,5 +49,12 @@
 }
 
 //! ----------- SASS: Загальні стилі Kнопок -----------
-@mixin button() {
+@mixin button($width: 178px, $height: 50px) {
+	width: $width; 
+	height: $height;
+	border-radius: 5px;
+	color: white;
+	background-color: #263238;
+	font-size: 18px; //різні  
+	font-weight: 500;
 }

@@ -1,6 +1,49 @@
 .about {
-    background-color: #b7e5ff;
+	background-color: #b7e5ff;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-family: getFont('font-family');
 
-    //! Медіа-запити
+	&__text {
+		font-weight: 400;
+		font-size: 13px;
+		text-align: center;
+		color: #8f95a5;
+		margin-bottom: 44px;
+		&::before{
+			content:'';
+			display: block; 
+			background-position: center;
+			background-repeat: no-repeat;
+			height: 283px;
+			background-image: url(../images/04_1_about_background-sm.svg);
+			margin-bottom:23px ;
+			
+		}
+	}
 }
+.about-title {
+	@include title-section;
+}
+.about-list {
+	&__item {
+		margin-bottom: 65px;
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
 
+	&__title {
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 333%;
+		color: #2a3246;
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 15px;
+		color: #8f95a5;
+	}
+}

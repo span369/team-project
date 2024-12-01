@@ -6,12 +6,22 @@
 		margin-bottom: 32px;
 	}
 	.skills-list {
-		display: flex;
-		gap: 21px;
-		flex-direction: column;
+		 display: flex;
+		 gap: 21px;
+		 flex-direction: column;
+
+		@media (min-width: getBreakPoint('md')) {
+			 flex-wrap:wrap;
+			 column-gap: 30px;
+			 row-gap: 34px;
+             flex-direction: row;
+		}
 		&__item {
 			background-color: #f5f5f5;
 			padding: 10px 17px 44px 15px;
+			@media (min-width: getBreakPoint('md')) {
+				width:240px;
+			}
 			&:nth-child(1) .skills-list__title::before {
 				height: 213px;
 				background-image: url(../images/03_1-1_skills_background-sm.svg);
@@ -28,6 +38,7 @@
 				height: 154px;
 				background-image: url(../images/03_1-4_skills_background-sm.svg);
 			}
+			
 
 		}
 		&__title {

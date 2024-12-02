@@ -1,6 +1,57 @@
 .pricing {
-    background-color: #dbb0ff;
+	background-color: #dbb0ff;
+	text-align: center;
+	font-family: getFont('font-family');
+	.pricing-title {
+		@include title-section;
+	}
+	.pricing-list {
+		&__item {
+			&:nth-child(1) .pricing-list__title::before {
+				height: 248px;
+                margin-bottom: 28px;
+				background-image: url(../images/05_1-1_pricing_background-sm.svg);
+			}
+            &:nth-child(2) .pricing-list__title::before {
+				height: 257px;
+                margin-bottom: 12px;
+				background-image: url(../images/05_1-2_pricing_background-sm.svg);
+			}
+            &:nth-child(3) .pricing-list__title::before {
+				height: 241px;
+                margin-bottom: 7px;
+				background-image: url(../images/05_1-3_pricing_background-sm.svg);
+			}
 
-    //! Медіа-запити
+		}
+		&__title {
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 156%;
+			color: #263238;
+			&::before {
+				content: '';
+				display: block;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+		}
+
+		&__text {
+			font-weight: 400;
+			font-size: 13px;
+			text-align: center;
+			color: #8f95a5;
+			margin-bottom: 50px;
+		}
+		&__div {
+			width: 170px;
+			height: 37px;
+			font-weight: 400;
+			font-size: 18px;
+			color: #263238;
+			background-color: #eeeeee;
+			margin: 0 auto;
+		}
+	}
 }
-

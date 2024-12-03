@@ -1,5 +1,47 @@
 .contacts {
-    background-color: #ffc9b5;
+	background-color: #ffc9b5;
+	font-family: getFont('font-family');
+    padding-bottom: 57px;
 
-    //! Медіа-запити
+	.contacts-title {
+		@include title-section;
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 14px;
+		text-align: center;
+		color: #8f95a5;
+        margin-bottom: 31px;
+
+		&::before {
+			content: '';
+			display: block;
+			background-position: center;
+			background-repeat: no-repeat;
+			height: 228px;
+			background-image: url(../images/06_1_contacts_background-sm.svg);
+			margin-bottom: 38px;
+		}
+	}
+
+	.contacts-form {
+		&__input {
+			border: 1px solid #8f95a5;
+			border-radius: 5px;
+			width: 291px;
+			height: 50px;
+			font-family: getFont('font-family');
+			padding-left: 26px;
+            margin-bottom: 17px;
+		}
+		&__btn {
+			padding: 20px 110px;
+			font-weight: 500;
+			font-size: 14px;
+			color: #ffffff;
+			background-color: #263238;
+            border-radius: 5px;
+		}
+	}
 }

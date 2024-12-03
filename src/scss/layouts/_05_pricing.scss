@@ -2,6 +2,7 @@
 	background-color: #dbb0ff;
 	text-align: center;
 	font-family: getFont('font-family');
+	padding-bottom: 72px;
 	.pricing-title {
 		@include title-section;
 	}

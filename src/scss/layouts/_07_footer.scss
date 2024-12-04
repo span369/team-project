@@ -1,6 +1,18 @@
 .footer {
-    background-color: #bfff9a;
-
-    //! Медіа-запити
+	background-color: #bfff9a;
+    font-family: getFont('font-family');
+	.footer-list {
+		display: flex;
+		&__link {
+			font-weight: 500;
+			font-size: 11px;
+			color: #8f95a5;
+		}
+	}
 }
-
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 25px;
+}

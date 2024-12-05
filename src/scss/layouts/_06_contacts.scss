@@ -1,7 +1,7 @@
 .contacts {
 	background-color: #ffc9b5;
 	font-family: getFont('font-family');
-    padding-bottom: 57px;
+	padding-bottom: 26px;
 
 	.contacts-title {
 		@include title-section;
@@ -12,7 +12,7 @@
 		font-size: 14px;
 		text-align: center;
 		color: #8f95a5;
-        margin-bottom: 31px;
+		margin-bottom: 31px;
 
 		&::before {
 			content: '';
@@ -26,6 +26,17 @@
 	}
 
 	.contacts-form {
+		&::after {
+			content: '';
+			display: block;
+			width: 290px;
+			height: 1px;
+			background-color: #c4c4c4;
+			background-position: center;
+			background-repeat: no-repeat;
+			margin-top: 57px;
+		}
+
 		&__input {
 			border: 1px solid #8f95a5;
 			border-radius: 5px;
@@ -33,7 +44,7 @@
 			height: 50px;
 			font-family: getFont('font-family');
 			padding-left: 26px;
-            margin-bottom: 17px;
+			margin-bottom: 17px;
 		}
 		&__btn {
 			padding: 20px 110px;
@@ -41,7 +52,7 @@
 			font-size: 14px;
 			color: #ffffff;
 			background-color: #263238;
-            border-radius: 5px;
+			border-radius: 5px;
 		}
 	}
 }

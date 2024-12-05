@@ -3,16 +3,29 @@
     font-family: getFont('font-family');
 	.footer-list {
 		display: flex;
+		&__item{
+			&:not(:last-child):after .footer-list__link{
+				display: block;
+				content: "•";
+				height: 3px;
+				width: 3px;
+				background-position: center;
+				background-repeat: no-repeat;
+				margin-left:5px ;
+				margin-right:5px ;
+		}
+		}
 		&__link {
 			font-weight: 500;
 			font-size: 11px;
 			color: #8f95a5;
 		}
 	}
-}
+
 .logo {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 25px;
+}
 }

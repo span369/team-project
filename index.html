@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!--! Назва вкладки -->
-		<title>????</title>
-		<!--! Завантаження іконки до назви сторінки (вкладки) title -->
 
-		<!--! Завантаження шрифтів:  -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-			rel="stylesheet"
-		/>
-		<!--! Завантаження modern-normalize -->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--! Назва вкладки -->
+	<title>????</title>
+	<!--! Завантаження іконки до назви сторінки (вкладки) title -->
 
-		<!--! Підкючення файла стилів SASS-->
-		<!-- <link rel="stylesheet" href="./css/styles.css" /> -->
-		<!-- <link rel="stylesheet" href="./css/main.min.css" /> -->
-		
-		<script type="module" crossorigin src="/team-project/assets/index-982cf57e.js"></script>
-		<link rel="stylesheet" href="/team-project/assets/index-4037d75c.css">
-	</head>
+	<!--! Завантаження шрифтів:  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet" />
+	<!--! Завантаження modern-normalize -->
 
-	<body>
-		<!--! Додаємо такі часткові елементи (паршали – partials) для кожної секції -->
-		<header class="header">
+	<!--! Підкючення файла стилів SASS-->
+	<!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+	<!-- <link rel="stylesheet" href="./css/main.min.css" /> -->
+	
+  <script type="module" crossorigin src="/team-project/assets/index-982cf57e.js"></script>
+  <link rel="stylesheet" href="/team-project/assets/index-4037d75c.css">
+</head>
+
+<body>
+	<!--! Додаємо такі часткові елементи (паршали – partials) для кожної секції -->
+	<header class="header">
 	<div class="container">
 		<!-- <nav class="header__nav">
 			<div class="logo-container">
@@ -109,8 +109,8 @@
 	</div>
 </header>
 
-		<main>
-			<section class="hero">
+	<main>
+		<section class="hero">
 	<div class="container">
 		<h1 class="hero__title">Learn Any Foreign Language</h1>
 		<p class="hero__text">
@@ -121,7 +121,7 @@
 	</div>
 </section>
 
-			<section class="skills" id="skills">
+		<section class="skills" id="skills">
 	<div class="container">
 		<h2 class="title">Skills</h2>
 		<ul class="skills-list">
@@ -165,7 +165,7 @@
 	</div>
 </section>
 
-			<section class="about" id="about">
+		<section class="about" id="about">
 	<div class="container">
 		<h2 class="about-title">About Us</h2>
 		<img src="" alt="" class="about__img" />
@@ -193,7 +193,7 @@
 	</div>
 </section>
 
-			<section class="pricing" id="pricing">
+		<section class="pricing" id="pricing">
 	<div class="container">
 		<h2 class="pricing-title">Pricing</h2>
 		<ul class="pricing-list">
@@ -224,7 +224,7 @@
 	</div>
 </section>
 
-			<section class="contacts" id="contacts">
+		<section class="contacts" id="contacts">
 	<div class="container">
 		<h2 class="contacts-title">contacts</h2>
 		<p class="contacts__text">
@@ -244,8 +244,8 @@
 	</div>
 </section>
 
-		</main>
-		<footer class="footer" >
+	</main>
+	<footer class="footer" >
 	<div class="container">
 		<div class="logo-container">
 	<a href="./index.html" class="logo"
@@ -273,42 +273,38 @@
 	</div>
 </footer>
 
-		<!--todo backdrop + Модальнє вікно (modal-window) для Бургер-меню -->
-		<div class="backdrop is-hidden" data-backdrop>
-			<button
-				class="button-burger-menu-close js-close-menu"
-				aria-expanded="false"
+	<!--todo backdrop + Модальнє вікно (modal-window) для Бургер-меню -->
+	<div class="backdrop is-hidden" data-backdrop>
+		<!--? Контейнер для Бургер-меню (modal-window) -->
+		<div class="menu-container js-menu-container">
+			<button 
+				class="button-burger-menu-close js-close-menu" 
+				aria-expanded="false" 
 				aria-controls="mobile-menu"
 			>
 				close
 			</button>
-			<div class="modal">
-				<!-- <nav class="header__nav">
-					<div class="logo-container">
-	<a href="./index.html" class="logo"
-		>Brit<span class="logo__span">lex</span></a
-	>
-</div>
-
-					<ul class="header-list">
-						<li class="header-list__item js-item">
-							<a class="header-list__link" href="./index.html">Home</a>
-						</li>
-						<li class="header-list__item js-item">
-							<a class="header-list__link" href="#skills">Skills</a>
-						</li>
-						<li class="header-list__item js-item">
-							<a class="header-list__link" href="#about">About Us</a>
-						</li>
-						<li class="header-list__item js-item">
-							<a class="header-list__link" href="#pricing">Pricing</a>
-						</li>
-						<li class="header-list__item js-item">
-							<a class="header-list__link" href="#contacts">Contacts</a>
-						</li>
-					</ul>
-				</nav> -->
-				<nav class="header__nav">
+			<!-- <nav class="header__nav">
+				<load="/partials/components/main-logo.html" />
+				<ul class="header-list">
+					<li class="header-list__item js-item">
+						<a class="header-list__link" href="./index.html">Home</a>
+					</li>
+					<li class="header-list__item js-item">
+						<a class="header-list__link" href="#skills">Skills</a>
+					</li>
+					<li class="header-list__item js-item">
+						<a class="header-list__link" href="#about">About Us</a>
+					</li>
+					<li class="header-list__item js-item">
+						<a class="header-list__link" href="#pricing">Pricing</a>
+					</li>
+					<li class="header-list__item js-item">
+						<a class="header-list__link" href="#contacts">Contacts</a>
+					</li>
+				</ul>
+			</nav> -->
+			<nav class="header__nav">
 	<div class="logo-container">
 	<a href="./index.html" class="logo"
 		>Brit<span class="logo__span">lex</span></a
@@ -334,19 +330,17 @@
 	</ul>
 </nav>
 
-				<button class="header__btn" type="button">Let’s Talk</button>
-			</div>
+			<button class="header__btn" type="button">Let’s Talk</button>
 		</div>
+	</div>
 
-		<!--? Скрипт для Бургер-меню -->
-		
+	<!--? Скрипт для Бургер-меню -->
+	
 
-		<!--? Скрипт для блокування вертикальної смуги прокрутки  -->
-		<script
-			defer
-			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-			crossorigin="anonymous"
-		></script>
-	</body>
+	<!--? Скрипт для блокування вертикальної смуги прокрутки  -->
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+		integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+		crossorigin="anonymous"></script>
+</body>
+
 </html>

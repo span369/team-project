@@ -8,26 +8,31 @@
 		<!--! Завантаження іконки до назви сторінки (вкладки) title -->
 
 		<!--! Завантаження шрифтів:  -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
 		<!--! Завантаження modern-normalize -->
 
 		<!--! Підкючення файла стилів SASS-->
 		<!-- <link rel="stylesheet" href="./css/styles.css" /> -->
 		<!-- <link rel="stylesheet" href="./css/main.min.css" /> -->
 		
-		<script type="module" crossorigin src="/team-project/assets/index-7812772d.js"></script>
-		<link rel="stylesheet" href="/team-project/assets/index-b7a18e87.css">
+		<script type="module" crossorigin src="/team-project/assets/index-982cf57e.js"></script>
+		<link rel="stylesheet" href="/team-project/assets/index-4037d75c.css">
 	</head>
 
 	<body>
 		<!--! Додаємо такі часткові елементи (паршали – partials) для кожної секції -->
 		<header class="header">
 	<div class="container">
-		<nav>
+		<!-- <nav class="header__nav">
 			<div class="logo-container">
-	<a href="./index.html" class="logo">Brit<span class="logo__span">lex</span></a>
+	<a href="./index.html" class="logo"
+		>Brit<span class="logo__span">lex</span></a
+	>
 </div>
 
 			<ul class="header-list">
@@ -47,7 +52,33 @@
 					<a class="header-list__link" href="#contacts">Contacts</a>
 				</li>
 			</ul>
-		</nav>
+		</nav> -->
+		<nav class="header__nav">
+	<div class="logo-container">
+	<a href="./index.html" class="logo"
+		>Brit<span class="logo__span">lex</span></a
+	>
+</div>
+
+	<ul class="header-list">
+		<li class="header-list__item js-item">
+			<a class="header-list__link" href="./index.html">Home</a>
+		</li>
+		<li class="header-list__item js-item">
+			<a class="header-list__link" href="#skills">Skills</a>
+		</li>
+		<li class="header-list__item js-item">
+			<a class="header-list__link" href="#about">About Us</a>
+		</li>
+		<li class="header-list__item js-item">
+			<a class="header-list__link" href="#pricing">Pricing</a>
+		</li>
+		<li class="header-list__item js-item">
+			<a class="header-list__link" href="#contacts">Contacts</a>
+		</li>
+	</ul>
+</nav>
+
 		<button class="button-menu-toggle js-open-menu">
 			<svg
 				class=""
@@ -217,7 +248,9 @@
 		<footer class="footer" >
 	<div class="container">
 		<div class="logo-container">
-	<a href="./index.html" class="logo">Brit<span class="logo__span">lex</span></a>
+	<a href="./index.html" class="logo"
+		>Brit<span class="logo__span">lex</span></a
+	>
 </div>
 
 		<ul class="footer-list">
@@ -241,7 +274,69 @@
 </footer>
 
 		<!--todo backdrop + Модальнє вікно (modal-window) для Бургер-меню -->
-		<div class="backdrop is-hidden" data-backdrop></div>
+		<div class="backdrop is-hidden" data-backdrop>
+			<button
+				class="button-burger-menu-close js-close-menu"
+				aria-expanded="false"
+				aria-controls="mobile-menu"
+			>
+				close
+			</button>
+			<div class="modal">
+				<!-- <nav class="header__nav">
+					<div class="logo-container">
+	<a href="./index.html" class="logo"
+		>Brit<span class="logo__span">lex</span></a
+	>
+</div>
+
+					<ul class="header-list">
+						<li class="header-list__item js-item">
+							<a class="header-list__link" href="./index.html">Home</a>
+						</li>
+						<li class="header-list__item js-item">
+							<a class="header-list__link" href="#skills">Skills</a>
+						</li>
+						<li class="header-list__item js-item">
+							<a class="header-list__link" href="#about">About Us</a>
+						</li>
+						<li class="header-list__item js-item">
+							<a class="header-list__link" href="#pricing">Pricing</a>
+						</li>
+						<li class="header-list__item js-item">
+							<a class="header-list__link" href="#contacts">Contacts</a>
+						</li>
+					</ul>
+				</nav> -->
+				<nav class="header__nav">
+	<div class="logo-container">
+	<a href="./index.html" class="logo"
+		>Brit<span class="logo__span">lex</span></a
+	>
+</div>
+
+	<ul class="header-list">
+		<li class="header-list__item js-item">
+			<a class="header-list__link" href="./index.html">Home</a>
+		</li>
+		<li class="header-list__item js-item">
+			<a class="header-list__link" href="#skills">Skills</a>
+		</li>
+		<li class="header-list__item js-item">
+			<a class="header-list__link" href="#about">About Us</a>
+		</li>
+		<li class="header-list__item js-item">
+			<a class="header-list__link" href="#pricing">Pricing</a>
+		</li>
+		<li class="header-list__item js-item">
+			<a class="header-list__link" href="#contacts">Contacts</a>
+		</li>
+	</ul>
+</nav>
+
+				<button class="header__btn" type="button">Let’s Talk</button>
+			</div>
+		</div>
 
 		<!--? Скрипт для Бургер-меню -->
 		

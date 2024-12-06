@@ -1,29 +1,33 @@
 .header {
-    background-color: #ffff8d;
-    padding-top:36px;
-    padding-bottom:32px ;
-    
-    //! Медіа-запити
-   &-list{
-    display: none;
-    @media (min-width: getBreakPoint('xl')) {
-        display: block;
-    }
-   }
-   &__btn{
-    display: none;
-    @media (min-width: getBreakPoint('xl')) {
-        display: block;
-    }
-   }
-   &__svg{
-   align-items: left;
-   justify-content: left;
-   }
-   .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   }
+	background-color: #ffff8d;
+	padding-top: 36px;
+	padding-bottom: 32px;
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+        @media (min-width: getBreakPoint('xl')){
+            
+        }
+	}
+	//! Медіа-запити
+	&-list {
+		display: none;
+		@media (min-width: getBreakPoint('xl')) {
+			display: flex;
+		}
+	}
+	.button-menu-toggle {
+		align-items: left;
+		justify-content: left;
+        @media (min-width: getBreakPoint('xl')){
+            display: none;
+        }
+	}
+	&__btn {
+		display: none;
+		@media (min-width: getBreakPoint('xl')) {
+			display: block;
+		}
+	}
 }
-

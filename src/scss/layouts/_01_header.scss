@@ -10,6 +10,9 @@
             
         }
 	}
+	&__nav{
+		display: flex;
+	}
 	//! Медіа-запити
 	&-list {
 		display: none;
@@ -18,8 +21,6 @@
 		}
 	}
 	.button-menu-toggle {
-		align-items: left;
-		justify-content: left;
         @media (min-width: getBreakPoint('xl')){
             display: none;
         }

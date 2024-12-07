@@ -19,7 +19,20 @@
     // }
 
     //? Список для Бургер-меню
+	.logo{
+		&::after{}
+	}
+	.header__nav{
+		flex-direction: column;
+		display: flex;
+	}
     .header-list {
-        display: block;
+        display: flex;
+		flex-direction: column;
+		&__link{
+			font-family: getFont('font-family');
+			
+		}
+
     }
 }

@@ -13,26 +13,39 @@
 		visibility: hidden;
 	}
 
-    //? Контейнер для Бургер-меню (modal-window)
-    // .menu-container {
-        
-    // }
+	//? Контейнер для Бургер-меню (modal-window)
+	// .menu-container {
 
-    //? Список для Бургер-меню
-	.logo{
-		&::after{}
+	// }
+
+	//? Список для Бургер-меню
+	.logo {
+		&::after {
+			content: '';
+			display: block;
+			width: 290px;
+			height: 1px;
+			background-color: #c4c4c4;
+			background-position: center;
+			background-repeat: no-repeat;
+			margin: left 15px; ;
+			margin-top: 20px;
+			margin-bottom: 48px;
+		}
 	}
-	.header__nav{
+	.header__nav {
 		flex-direction: column;
 		display: flex;
 	}
-    .header-list {
-        display: flex;
+	.header-list {
+		display: flex;
 		flex-direction: column;
-		&__link{
+		&__link {
 			font-family: getFont('font-family');
-			
+			font-weight: 500;
+			font-size: 22px;
+			line-height: 295%;
+			color: #263238;
 		}
-
-    }
+	}
 }

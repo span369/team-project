@@ -21,6 +21,26 @@
 		}
 	}
 	.button-menu-toggle {
+		&__md, &__lg{
+			display: none;
+		}
+		@media (min-width: getBreakPoint('md')){
+            &__sm{
+				display: none;
+			}
+			&__md{
+				display: block;
+			}
+        }
+		@media (min-width: getBreakPoint('lg')){
+			&__md{
+				display: none;
+			}
+			&__lg{
+				display: block;
+			}
+            
+        }
         @media (min-width: getBreakPoint('xl')){
             display: none;
         }

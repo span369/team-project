@@ -1,9 +1,21 @@
+.logo-container{
+  outline: 1px solid forestgreen;  
 .logo {
-    color: #000;
-    font-weight: 400;
-    font-size: 24px;
-    font-family: getFont('font-family');
-    &__span {
-        color: #939393;
-    }
+	color: #000;
+	font-weight: 400;
+	font-size: 24px;
+	font-family: getFont('font-family');
+    // display: inline-block;
+    // width:max-content;
+    outline: 1px solid purple;
+	&:hover {
+		color: red;
+	}
+    &:hover .logo__span {
+		color: red;
+	}
+	&__span {
+		color: #939393;
+	}
+}
 }

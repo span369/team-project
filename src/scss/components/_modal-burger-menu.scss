@@ -1,8 +1,8 @@
 //todo backdrop + Модальнє вікно (modal-window) для Бургер-меню
 .backdrop {
 	width: 100%;
-	height: 95vh;
-	background-color: lightgray;
+	height: 100vh;
+	background-color: #FFFF;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -23,12 +23,10 @@
 		&::after {
 			content: '';
 			display: block;
-			width: 290px;
+			// width: 290px;
 			height: 1px;
 			background-color: #c4c4c4;
-			background-position: center;
-			background-repeat: no-repeat;
-			margin: left 15px; ;
+			margin-left:  15px; ;
 			margin-top: 20px;
 			margin-bottom: 48px;
 		}

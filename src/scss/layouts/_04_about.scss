@@ -29,10 +29,19 @@
 	@include title-section;
 }
 .about-list {
+@media (min-width:getBreakPoint('md')){
+	display: flex;
+	justify-content: space-between;
+}
 	&__item {
 		margin-bottom: 65px;
 		&:last-child {
 			margin-bottom: 0px;
+		}
+		@media (min-width: getBreakPoint('md')){
+			display: flex;
+			margin-bottom: 0px;	
+			flex-direction: column;
 		}
 	}
 

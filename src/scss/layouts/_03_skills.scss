@@ -20,15 +20,16 @@
 			background-color: #f5f5f5;
 			padding: 10px 17px 44px 15px;
 			@media (min-width: getBreakPoint('md')) {
+				flex-grow: 1;
 				width:240px; 
-				&:nth-child(2) .skills-list__text{
-					margin-bottom:136px ;
+				&:nth-child(1){	
 				}
-				&:nth-child(3) .skills-list__text{
-					margin-bottom:126px ;
+				&:nth-child(2){
 				}
-				&:nth-child(4) .skills-list__text{
-					margin-bottom:122px ;
+				&:nth-child(3){
+				}
+				&:nth-child(4){
+
 				}
 			}
 			&:nth-child(1) .skills-list__title::before {

@@ -1,26 +1,42 @@
 .footer {
 	background-color: #bfff9a;
-    font-family: getFont('font-family');
+	font-family: getFont('font-family');
+	.container {
+		@media (min-width: getBreakPoint('md')) {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
 	.footer-list {
 		display: flex;
-		&__item{
-			&:not(:last-child)::after{
-				content: "•";
-                font-size: 10px;
+		&__item {
+			&:not(:last-child)::after {
+				content: '•';
+				font-size: 10px;
 				margin: 0 1px;
-		}
+			}
 		}
 		&__link {
 			font-weight: 500;
 			font-size: 11px;
 			color: #8f95a5;
+			@media (min-width: getBreakPoint('md')) {
+				font-size: 10px;
+			}
 		}
 	}
 
-.logo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 25px;
-}
+	.logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 25px;
+		@media (min-width: getBreakPoint('md')) {
+			font-weight: 400;
+			font-size: 30px;
+			margin-bottom: 0;
+			margin-right: 104px;
+		}
+	}
 }

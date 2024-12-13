@@ -47,10 +47,17 @@
         }
 	}
 	&__btn {
-		@include button-lets-talk()
 		display: none;
 		@media (min-width: getBreakPoint('xl')) {
 			display: block;
+			@include button-lets-talk();
+		}
+		@media (min-width: getBreakPoint('xxl')){
+			// @include button-lets-talk(220px, 70px, 24px);
+			width: 220px;
+			height: 70px;
+			font-size: 24px;
 		}
 	}
 }
+

@@ -47,6 +47,7 @@
         }
 	}
 	&__btn {
+		@include button-lets-talk()
 		display: none;
 		@media (min-width: getBreakPoint('xl')) {
 			display: block;

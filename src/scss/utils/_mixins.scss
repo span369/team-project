@@ -29,20 +29,20 @@
 	font-size: 24px;
 	line-height: 3.33;
 	color: getColor('dark');
-    text-align: center;
-    @media (min-width: getBreakPoint('md')) {
-        font-size: 30px;
-        line-height: 2.67;
+	text-align: center;
+	@media (min-width: getBreakPoint('md')) {
+		font-size: 30px;
+		line-height: 2.67;
 	}
 
 	@media (min-width: getBreakPoint('xl')) {
-        font-size: 36px;
-        line-height: 2.22;
+		font-size: 36px;
+		line-height: 2.22;
 	}
 
 	@media (min-width: getBreakPoint('xxl')) {
-        font-size: 48px;
-        line-height: 1.67;
+		font-size: 48px;
+		line-height: 1.67;
 	}
 }
 @mixin title-card() {
@@ -50,11 +50,21 @@
 
 //! ----------- SASS: Загальні стилі Kнопок -----------
 @mixin button($width: 178px, $height: 50px) {
-	width: $width; 
+	width: $width;
 	height: $height;
 	border-radius: 5px;
 	color: white;
 	background-color: #263238;
-	font-size: 18px; //різні  
+	font-size: 18px; //різні
 	font-weight: 500;
+}
+@mixin button-lets-talk($width: 160px, $height: 50px, $font-size: 18px) {
+	width: $width;
+	height: $height;
+	border: 2px solid #263238;
+	border-radius: 5px;
+	font-weight: 400;
+	font-size: $font-size;
+	color: getColor('dark');
+	background-color: transparent;
 }

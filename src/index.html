@@ -35,41 +35,7 @@
 	<load ="./partials/07_footer.html" />
 
 	<!--todo backdrop + Модальнє вікно (modal-window) для Бургер-меню -->
-	<div class="backdrop is-hidden" data-backdrop>
-		<!--? Контейнер для Бургер-меню (modal-window) -->
-		<div class="menu-container js-menu-container">
-			<button 
-				class="button-burger-menu-close js-close-menu" 
-				aria-expanded="false" 
-				aria-controls="mobile-menu"
-			>
-				close
-			</button>
-			<!-- <nav class="header__nav">
-				<load="/partials/components/main-logo.html" />
-				<ul class="header-list">
-					<li class="header-list__item js-item">
-						<a class="header-list__link" href="./index.html">Home</a>
-					</li>
-					<li class="header-list__item js-item">
-						<a class="header-list__link" href="#skills">Skills</a>
-					</li>
-					<li class="header-list__item js-item">
-						<a class="header-list__link" href="#about">About Us</a>
-					</li>
-					<li class="header-list__item js-item">
-						<a class="header-list__link" href="#pricing">Pricing</a>
-					</li>
-					<li class="header-list__item js-item">
-						<a class="header-list__link" href="#contacts">Contacts</a>
-					</li>
-				</ul>
-			</nav> -->
-			<load ="/partials/components/header-nav.html" />
-			<button class="header__btn" type="button">Let’s Talk</button>
-		</div>
-	</div>
-
+	<load ="./partials/components/modal-burger-menu.html" />
 	<!--? Скрипт для Бургер-меню -->
 	<script type="module" src="./index.js"></script>
 
